@@ -1,0 +1,8 @@
+version: '3'
+services:
+  cloudcanal:
+    build: .
+    volumes:
+      - ./conf.properties:/home/cloudcanal/cloudcanal/global_conf/conf.properties
+      - ./logs:/home/cloudcanal/logs
+    restart: unless-stopped
