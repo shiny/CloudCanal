@@ -15,3 +15,6 @@
 2. `mkdir logs`
 3. `chown -R 1000:1000 ./logs`
 4. `docker compose up -d`
+
+## 说明
+这是非官方的 Docker 封装，技术支持请找官方。如有侵犯权益，请发个 issue，将移除仓库。
