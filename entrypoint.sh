@@ -6,7 +6,7 @@ pidFile="/home/cloudcanal/cloudcanal/sidecar/bin/sidecar.pid"
 logFile="/home/cloudcanal/logs/cloudcanal/sidecar/sidecar.log"
 
 start(){
-    ./sidecar/bin/startSidecar.sh
+    ./cloudcanal/sidecar/bin/startSidecar.sh
     read pid < $pidFile
     echo -e "pidFile $pidFile\npid ${pid}"
     if [ -n "${pid}" ];
@@ -20,7 +20,7 @@ start(){
 
 stop(){
     echo "stopping $pid"
-    ./sidecar/bin/stopSidecar.sh
+    ./cloudcanal/sidecar/bin/stopSidecar.sh
 }
 
 start
