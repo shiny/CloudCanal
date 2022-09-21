@@ -1,7 +1,7 @@
 version: '3'
 services:
   cloudcanal:
-    build: .
+    image: ghcr.io/shiny/cloudcanalclient:saas-20220921
     volumes:
       - ./conf.properties:/home/cloudcanal/cloudcanal/global_conf/conf.properties
       - ./logs:/home/cloudcanal/logs
