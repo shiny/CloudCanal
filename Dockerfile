@@ -11,6 +11,7 @@ RUN set -eux; \
 
 COPY --chown=cloudcanal:cloudcanal ./cloudcanal /home/cloudcanal/cloudcanal
 COPY --chown=cloudcanal:cloudcanal ./entrypoint.sh /home/cloudcanal/cloudcanal
+RUN chmod +x /home/cloudcanal/cloudcanal/entrypoint.sh
 RUN chmod +x /home/cloudcanal/cloudcanal/sidecar/bin/*.sh
 RUN chmod +x /home/cloudcanal/cloudcanal/cloudcanal/bin/*.sh
 ENV HOME /home/cloudcanal
