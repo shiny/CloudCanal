@@ -1,3 +1,5 @@
+ > #  :boom: 由于 CloudCanal 下线 SaaS 版，此仓库不再维护。相关数据同步需求已经使用 [Maxwell](https://maxwells-daemon.io/) 代替
+
 # CloudCanal 客户端
 
 - 目前支持 SaaS 版的客户端
